@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Game Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./assets/css/AIstyle.css">
+</head>
+
+<body style="background-image: url(https://media.istockphoto.com/photos/red-clay-court-tennis-background-texture-tennis-court-closeup-of-picture-id1175084927?k=6&m=1175084927&s=612x612&w=0&h=wF4H3EPwniAWRkGUMoZJ6G10fIar9ASF7ATq8E_K8Bk=);background-repeat: no-repeat;background-size: cover;">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3" id="player1-score-board">
+            <div id="player1-name" style="color: white;font-size: larger;">Player 1 </div>
+            <div id="player1-score" style="color: white;font-size: larger;">0</div>
+        </div>
+        <div class="col-3" id="player2-score-board">
+            <div id="player2-name" style="color: white;font-size: larger;">You </div>
+            <div id="player2-score" style="color: white;font-size: larger;">0</div>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" style="background-color: thistle;" id="clearBtn">
+                New Game
+            </button>
+        </div>
+    </div>
+
+    <canvas id="myCanvas" width="700" height="450" class="mt-5" style="background-image: url(https://thumbs.dreamstime.com/t/tennis-court-field-isolated-white-background-stock-vector-i-tennis-court-field-isolated-white-background-stock-vector-112009596.jpg);background-repeat: no-repeat;background-size: cover;">
+
+    </canvas>
+   <div class="dropdown" style="position: absolute;margin-top: -450px;margin-left: 360px;">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Help
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" id="refresh" href="#">New Game</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Quit</a>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./assets/js/sample.js"></script>
+</body>
+
+</html>
